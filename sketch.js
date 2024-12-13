@@ -41,7 +41,8 @@ function preload() {
 
 function setup() {
   bgt = loadImage('background-tower.png');
-  new Canvas(400, 900);  // Adjusted canvas size to 400x900
+  let canvas = createCanvas (400, 900); // Adjusted canvas size to 400x900
+  canvas.parent('#portrait');
   world.gravity.y = 10;
   projectiles = new Group();
   projectiles.d = 10;
